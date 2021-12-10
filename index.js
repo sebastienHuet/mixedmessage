@@ -49,4 +49,3 @@ let randomJoke = jokes.getRandomDadJoke(function(joke){
 
 console.log(`${randomName()} can make stupid joke such as: '${randomJoke}', but in the same time he can be quite inspirationnal when he says stuff such as : '${randomQuote()}' `);
 
-
