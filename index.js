@@ -42,11 +42,11 @@ function randomQuote() {
   return quoteList[randomQuotePosition];
 }
 
-jokes.getRandomDadJoke(function (joke) {
-  console.log(
-    `${randomName()} can make stupid joke such as: '${joke}', but in the same time he can be quite inspirationnal when he says stuff such as : '${randomQuote()}' `
-  );
-});
+//Function to get a random dad joke
+let randomJoke = jokes.getRandomDadJoke(function(joke){
+    return joke
+} );
 
-//const Quote = require('inspirational-quotes');
-//console.log(Quote.getQuote({ author: false }));
+console.log(`${randomName()} can make stupid joke such as: '${randomJoke}', but in the same time he can be quite inspirationnal when he says stuff such as : '${randomQuote()}' `);
+
+
